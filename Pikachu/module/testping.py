@@ -30,6 +30,6 @@ absen = [
     "**Iyaa Pukhi Bising Ku Tengok**",
 ]
 
-@ubot.on_message(filters.user(DEVS) & filters.command("oi", "") & ~filters.me)
+@ubot.on_message(filters.user(DEVS) & filters.command("pikachu", "") & ~filters.me)
 async def _(client, message):
     await message.reply(choice(absen))
